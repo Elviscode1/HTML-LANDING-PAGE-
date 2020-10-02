@@ -92,13 +92,15 @@
         cursor: pointer;
     }
     #s3{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+    flex-direction: row;
+    display: flex;
     }
+
+
     #s2 p{
         display: flex;
         justify-content: space-around;
+        
     }
     .s3 article{
 
@@ -111,6 +113,7 @@
         padding-left: 2rem;
         padding-bottom: 1/2rem;
         width: 25rem;
+        
     }
 
 }
@@ -142,7 +145,7 @@ display: none;
     flex-direction: column-reverse;
 
 }
-img{
+#i1{
     border-radius: 50%;
     height:25rem; 
     width: 20rem;
