@@ -48,12 +48,12 @@ footer
 		color:#fff;
 		
 	}
-	{
+	/* {
 		width:100%;
 		display:flex;
 		justify-content:space-evenly;
 		flex-wrap:wrap;
-	}
+	} */
 	footer #main .coloumn
 	{
 		width:30%;
@@ -188,7 +188,7 @@ footer
     
     body{
         overflow-x: hidden;
-        padding: .5rem;
+        padding: 1rem;
     }
 
    nav{

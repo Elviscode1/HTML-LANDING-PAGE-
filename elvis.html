@@ -8,7 +8,456 @@
     <title>My PORTFOLIO</title>
 
   <link rel="stylesheet" href="./elvis.css">
+  <link rel="stylesheet" href="./format.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {  
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @keyframes zoom {
+      from {transform: scale(0.1)} 
+      to {transform: scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: orange;
+      font-size: 100px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 765px){
+      .modal-content {
+        width: 100%;
+      }
+
+      .close {
+      position: absolute;
+      top: -70px;
+      right: 35px;
+      color: orange;
+      font-size: 80px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    }
+
+    #myPic {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myPic:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modat {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-contend {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#captive {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-contend, #captive {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.fish {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.fish:hover,
+.fish:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 765px){
+  .modal-contend {
+    width: 100%;
+  }
+
+  .fish {
+  position: absolute;
+  top: -70px;
+  right: 35px;
+  color: orange;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+}
+
+#myPics {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myPics:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modab {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-contenb {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#captil {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-contenb, #captil {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.open {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.open:hover,
+.open:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-contenb {
+    width: 100%;
+  }
+
+  .open {
+  position: absolute;
+  top: -70px;
+  right: 35px;
+  color: orange;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+}
+
+#mycat {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mycat:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modak {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-contenk {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#captik {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-contenk, #captik {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.cat {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cat:hover,
+.cat:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 765px){
+  .modal-contenk {
+    width: 100%;
+  }
+
+  .cat {
+  position: absolute;
+  top: -70px;
+  right: 35px;
+  color: orange;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+}
+
+#mycats {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mycats:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modac {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-contenc {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#captic {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-contenc, #captic {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.cats {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cats:hover,
+.cats:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 765px){
+  .modal-contenc {
+    width: 100%;
+  }
+
+  .cats {
+  position: absolute;
+  top: -70px;
+  right: 35px;
+  color: orange;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+}
+
+    </style>
 </head>
 <body>
     
@@ -140,6 +589,145 @@
 
 
     </section>
+    <br>
+    <br>
+
+    <article id="a3">
+      <h1>Latest work</h1>
+  
+  <br>
+  <br>
+  
+  <p style="padding-left: 0rem; padding-right: 1rem;">Here are some of the websites and pictures created by me for some of my clients and my self development.I do different catergory of websites e.g food, business, advertisment,etc.</p>
+    </article>
+  <br>
+  <br>
+  
+      <div class="flex-container">
+      <div class="row">
+          <div class="column">
+            <img id="myImg" src="https://cdn.dribbble.com/users/1070370/screenshots/6376119/dribbble.jpg" alt="Michel portfolio, Norway" style="margin-right: 0; width: 7cm; height: 5cm;" >
+
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+            <span>
+            <img id="myCat" src="https://cdn1.joomlashine.com/images/v6/jsn-templates/jsn-tendo/screenshots/tendo_linxpurity_750_x1.jpg"  style="height: 5cm; width: 8rem; margin-right: 0;" alt="LinxPurity, Spain">
+
+            <div id="himModal" class="modak">
+              <span class="cat">&times;</span>
+              <img class="modal-contenk" id="img04">
+              <div id="captik"></div>
+            </div>
+
+            <img id="myCats" src="https://www.joomlashine.com/images/v6/jsn-templates/jsn-vintage/screenshots/vintage/vintage_750_x1.jpg"  style="height: 5cm; margin-right: 0; width: 8rem;" alt="vintage ,Brazil">
+
+            <div id="sheModal" class="modac">
+              <span class="cats">&times;</span>
+              <img class="modal-contenc" id="img05">
+              <div id="captic"></div>
+            </div>
+
+            </span>
+  
+          </div>
+          <div class="column">
+            <img id="myPic" src="https://themetrust.com/wp-content/uploads/2018/04/create-masonry-demo.png" style="margin-right: 0; width: 7.2cm;" alt="Jason portfolio, Canada" >
+
+            <div id="herModal" class="modat">
+              <span class="fish">&times;</span>
+              <img class="modal-contend" id="img02">
+              <div id="captive"></div>
+            </div>
+
+            <img id="myPics" src="https://cdn.dribbble.com/users/989529/screenshots/3107873/portfolioo.jpg"  style="height: 5.3cm; width: 6.8cm; margin-right: 0;" alt="Christina portfolio, America">
+
+           
+
+            <!-- The Modal -->
+<div id="hisModal" class="modab">
+  <span class="open">&times;</span>
+  <img class="modal-contenb" id="img03">
+  <div id="captil"></div>
+</div>
+
+            
+          </div>
+      </div>
+      </div>
+          
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <br>
+      <br>
+  
+      <section class="s7">
+        <h2>What are clients saying</h2>
+      </section>
+
+      <br>
+      <br>
+      <br>
+
+      <section class="s8">
+        <div id="a9" class="meat">
+    <article >
+        
+        <img src="css1.jpg" style="height: 2cm; width: 2cm;">
+        <br>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.  
+        </p>
+        <img src="quote-removebg-preview.png" style="height: 1.5cm; width: 1.5cm; float: right;">
+    </article>
+            
+    
+        <br>
+        <br>
+
+        <article>
+        <img src="css2.jpg" style="height: 2cm; width: 2cm;">
+        <br>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.  
+        </p>
+        <img src="quote-removebg-preview.png" style="height: 1.5cm; width: 1.5cm; float: right;">
+        </article>
+        <br>
+        <br>
+
+        <article>
+        <img src="css3.jpg" style="height: 2cm; width: 2cm;">
+        <br>
+        
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.  
+        </p>
+        <img src="quote-removebg-preview.png" style="height: 1.5cm; width: 1.5cm; float: right;">
+
+        <br>
+        <br>
+
+    </article>
+        </div>
+    </section>
+
+    <br>
+    
+    <div id="a6" class="rice">
+    <article><h2 style="color: white;"> I'm available for Freelancing Project.</h2></article>
+    <button class="soup">Hire me</button>
+ </div>   
+
+ <br>
+ <br>
+ <br>
  
     <!-- Responsive Footer -->
     <footer>
@@ -170,5 +758,119 @@
 	</footer>
 
     <script src="../ACTON/elvis.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmouseover = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onmouseover = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+
+<script>
+  // Get the modal
+  var modat = document.getElementById('herModal');
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myPic');
+  var modatImg = document.getElementById("img02");
+  var captionText = document.getElementById("captive");
+  img.onmouseover = function(){
+    modat.style.display = "block";
+    modatImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("fish")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onmouseover = function() { 
+    modat.style.display = "none";
+  }
+  </script>
+  
+  <script>
+    // Get the modal
+    var modab = document.getElementById('hisModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myPics');
+    var modabImg = document.getElementById("img03");
+    var captionText = document.getElementById("captil");
+    img.onmouseover = function(){
+      modab.style.display = "block";
+      modabImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("open")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onmouseover = function() { 
+      modab.style.display = "none";
+    }
+    </script>
+    
+    <script>
+      // Get the modal
+      var modak = document.getElementById('himModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myCat');
+      var modakImg = document.getElementById("img04");
+      var captionText = document.getElementById("captik");
+      img.onmouseover = function(){
+        modak.style.display = "block";
+        modakImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("cat")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onmouseover = function() { 
+        modak.style.display = "none";
+      }
+      </script>
+<script>
+// Get the modal
+var modac = document.getElementById('sheModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myCats');
+var modacImg = document.getElementById("img05");
+var captionText = document.getElementById("captic");
+img.onmouseover = function(){
+  modac.style.display = "block";
+  modacImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("cats")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onmouseover = function() { 
+  modac.style.display = "none";
+}
+
+</script>
 </body>
 </html>
