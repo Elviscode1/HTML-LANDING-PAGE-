@@ -16,11 +16,13 @@ document.querySelector("form").addEventListener('submit', function(e){
         email:myemail,
         details:mytext,
     }
+    document.querySelector("form").reset()
+
 
     //let userarraystringe = JSON.stringify(user)
    // localStorage.setItm("userinfo", userarraystringe )
 let DB = firebase.firestore()
-DB.collection("xtianoweb").doc("usersData").set(user)
+DB.collection("xtianoweb").doc("usersData").add(user)
         
     } catch (error) {
 
@@ -32,6 +34,8 @@ DB.collection("xtianoweb").doc("usersData").set(user)
 
 })
 
+
+  
 
 
 
