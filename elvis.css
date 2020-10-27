@@ -143,6 +143,8 @@ footer
         
         
     }
+    
+
     #en span{
         padding-left:3rem ;
     }
@@ -227,6 +229,12 @@ footer
         margin-right: 2rem;
         transform: rotate(-8deg);
         border-radius: 5px;
+        transition: 1.2s ease-in-out;
+
+    }
+    #i2:hover{
+        transition: 1.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+        transform: scale(1);
     }
     p{
         line-height: 1.5;
@@ -340,6 +348,52 @@ footer #main .coloumn
 		display:inline-block;
 		
     }
+    #i2{
+        height: 18rem;
+        width: 15rem;
+        margin-left: 2rem;
+        transform: rotate(2deg);
+        border-radius: 5px;
+    }
+    #mysec{
+
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    #ma {
+
+        align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-around;
+    
+    }
+    #grt {
+
+        align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-around;
+    
+    }
+    #just {
+
+        align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-around;
+    
+    }
+    #st {
+
+        align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-around;
+    
+    }
+        
 
 
 }

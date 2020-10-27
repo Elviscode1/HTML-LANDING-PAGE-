@@ -61,7 +61,24 @@ if(start >= card.end){
 
 }
 
-cardArray.map( (obj) =>{
 
-    clock(obj)
-})
+
+window.onscroll = function(e){
+
+    myFunction()
+
+    console.log(window.pageYOffset)
+
+};
+function myFunction(){
+    if (window.pageYOffset > 433 && window.pageYOffset < 440 ){
+
+        document.getElementById("mysec");
+
+        cardArray.map( (obj) =>{
+
+            clock(obj)
+        })
+    }
+
+}
