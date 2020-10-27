@@ -72,6 +72,7 @@
   font-size: large;
   outline: none;
   border: none;
+  margin-left: 20rem;
 }
 
 .rice{
@@ -88,6 +89,22 @@
 .rice article{
     width: 8cm;
     margin-left: 4rem;
+}
+
+a::before{
+    text-decoration: none;
+}
+
+a::after{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 
